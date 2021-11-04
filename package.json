@@ -12,6 +12,8 @@
     "eslint:fix": "eslint --fix 'src/**/*.ts'",
     "prettier": "prettier 'src/**/*.ts'",
     "prettier:fix": "prettier --write 'src/**/*.ts'",
+    "linter": "eslint & prettier",
+    "linter:fix": "eslint:fix & prettier:fix",
     "prebuild": "rimraf ./dist",
     "build": "prebuild & npx tsc --project ./",
     "start:dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/main.ts",
